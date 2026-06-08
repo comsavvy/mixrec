@@ -1,0 +1,10 @@
+# Runtime dependencies for serving the MixRec demo (streamlit run app.py).
+# The LightGCN / MF embeddings are precomputed into artifacts/*.npz, so
+# torch / torch_geometric are NOT needed to serve - only to retrain.
+# See requirements-precompute.txt for the training-only extras.
+streamlit>=1.30
+altair
+pandas
+numpy
+catboost
+pyarrow

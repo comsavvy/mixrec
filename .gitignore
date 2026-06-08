@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# CatBoost training scratch output
+catboost_info/
+
+# Local Streamlit secrets (never commit)
+.streamlit/secrets.toml
+
+# NOTE: artifacts/ IS committed on purpose - the trained models are only
+# ~11 MB and let the app run with zero setup. Do not ignore that folder.

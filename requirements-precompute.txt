@@ -1,0 +1,7 @@
+# Extra dependencies needed ONLY to regenerate artifacts/ via precompute.py.
+# Install these on top of requirements.txt when retraining the models:
+#     pip install -r requirements.txt -r requirements-precompute.txt
+#     python precompute.py      # reads the MovieLens-1M .dat files
+scikit-learn
+torch
+torch_geometric

@@ -1,0 +1,18 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MixRec logo">
+  <defs>
+    <linearGradient id="mixg" x1="0" y1="0" x2="48" y2="48"
+                    gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#4DA3FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#mixg)"/>
+  <path d="M16 16 L32 24 M16 32 L32 24" stroke="#FFFFFF" stroke-width="2.4"
+        stroke-linecap="round" opacity="0.9"/>
+  <circle cx="16" cy="16" r="4.4" fill="#FFFFFF"/>
+  <circle cx="16" cy="32" r="4.4" fill="#FFFFFF"/>
+  <circle cx="33" cy="24" r="5.4" fill="#FFFFFF"/>
+  <path d="M33 20.4 l1.05 2.13 2.35.34-1.7 1.66.4 2.34L33 25.9l-2.1 1.1.4-2.34
+           -1.7-1.66 2.35-.34Z" fill="#6C4DF6"/>
+</svg>
