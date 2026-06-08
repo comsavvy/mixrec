@@ -12,9 +12,9 @@ license: mit
 
 # MixRec - Mixed-Type Recommender Systems
 
-An interactive demo of the recommender models from the AIMS Rwanda thesis
-*"Mixed-Type Recommender Systems"*, trained on **MovieLens-1M**. It lets you
-explore and compare three different modelling families side by side:
+MixRec is an interactive movie-recommendation demo trained on **MovieLens-1M**.
+It puts three different modelling families side by side so you can see how each
+one recommends, compares, and explains its picks:
 
 | Model | Family | Strength |
 |-------|--------|----------|
@@ -43,23 +43,15 @@ so there is **no training or download step** to serve it. Note that the
 LightGCN and MF embeddings are precomputed into `artifacts/*.npz`, so PyTorch is
 **not** required to run the demo.
 
-## Deployment
-
-This repository is ready to deploy as-is on either host:
-
-- **Hugging Face Spaces** - create a Space with the *Streamlit* SDK and push this
-  repo. The YAML header at the top of this README configures it automatically.
-- **Streamlit Community Cloud** - point [share.streamlit.io](https://share.streamlit.io)
-  at this repo with `app.py` as the entrypoint. (The YAML header above is ignored.)
-
 ## Retraining (optional)
 
-To regenerate `artifacts/` from scratch you need the MovieLens-1M `.dat` files
-and the training-only extras:
+The committed `artifacts/` are all you need to run MixRec. To rebuild them from
+scratch, install the training extras, add the MovieLens-1M `.dat` files
+(`ratings.dat`, `users.dat`, `movies.dat`) where `precompute.py` expects them,
+and run it:
 
 ```bash
 pip install -r requirements.txt -r requirements-precompute.txt
-# place ratings.dat / users.dat / movies.dat in ../datasets/
 python precompute.py
 ```
 
@@ -71,7 +63,7 @@ recommender.py               Loads artifacts, scores top-K live
 theme.py                     Logo SVG, CSS, HTML renderers
 precompute.py                Training script (regenerates artifacts/)
 artifacts/                   Trained models + cached frames (committed)
-images/                      Thesis figures used in the Interpretability page
+images/                      Figures used in the Interpretability page
 .streamlit/config.toml       Theme + server config
 requirements.txt             Runtime dependencies
 requirements-precompute.txt  Extra deps for retraining only
