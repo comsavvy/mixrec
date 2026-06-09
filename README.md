@@ -16,6 +16,8 @@ MixRec is an interactive movie-recommendation demo trained on **MovieLens-1M**.
 It puts three different modelling families side by side so you can see how each
 one recommends, compares, and explains its picks:
 
+**▶ Live demo: [comsavvy-mixrec.streamlit.app](https://comsavvy-mixrec.streamlit.app/)**
+
 | Model | Family | Strength |
 |-------|--------|----------|
 | **Matrix Factorisation** | Latent-factor collaborative filtering | Strong, balanced ranking |
